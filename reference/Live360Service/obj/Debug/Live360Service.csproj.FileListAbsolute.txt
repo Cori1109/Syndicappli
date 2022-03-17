@@ -1,0 +1,14 @@
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\bin\Debug\Live360Service.exe.config
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\obj\Debug\Live360Service.exe
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\obj\Debug\Live360Service.pdb
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\bin\Debug\Live360Service.exe
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\bin\Debug\Live360Service.pdb
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\bin\Debug\Common.Logging.Core.dll
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\bin\Debug\Newtonsoft.Json.dll
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\bin\Debug\SimpleLogger.dll
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\bin\Debug\websocket-sharp.dll
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\bin\Debug\Common.Logging.Core.pdb
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\bin\Debug\Common.Logging.Core.xml
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\bin\Debug\Newtonsoft.Json.xml
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\bin\Debug\websocket-sharp.xml
+E:\Project\Camera\obs-websocket-dotnet-master\Live360Service\obj\Debug\Live360Service.csprojResolveAssemblyReference.cache

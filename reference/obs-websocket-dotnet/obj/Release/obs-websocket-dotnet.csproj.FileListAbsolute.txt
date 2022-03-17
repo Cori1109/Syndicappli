@@ -1,0 +1,12 @@
+E:\Jitsi\src\reference\obs-websocket-dotnet\bin\Release\obs-websocket-dotnet.xml
+E:\Jitsi\src\reference\obs-websocket-dotnet\bin\Release\obs-websocket-dotnet.dll
+E:\Jitsi\src\reference\obs-websocket-dotnet\bin\Release\obs-websocket-dotnet.pdb
+E:\Jitsi\src\reference\obs-websocket-dotnet\bin\Release\Newtonsoft.Json.dll
+E:\Jitsi\src\reference\obs-websocket-dotnet\bin\Release\websocket-sharp.dll
+E:\Jitsi\src\reference\obs-websocket-dotnet\bin\Release\Newtonsoft.Json.xml
+E:\Jitsi\src\reference\obs-websocket-dotnet\bin\Release\websocket-sharp.xml
+E:\Jitsi\src\reference\obs-websocket-dotnet\obj\Release\obs-websocket-dotnet.csprojAssemblyReference.cache
+E:\Jitsi\src\reference\obs-websocket-dotnet\obj\Release\obs-websocket-dotnet.csproj.CoreCompileInputs.cache
+E:\Jitsi\src\reference\obs-websocket-dotnet\obj\Release\obs-websocket-dotnet.csproj.CopyComplete
+E:\Jitsi\src\reference\obs-websocket-dotnet\obj\Release\obs-websocket-dotnet.dll
+E:\Jitsi\src\reference\obs-websocket-dotnet\obj\Release\obs-websocket-dotnet.pdb

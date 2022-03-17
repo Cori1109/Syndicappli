@@ -1,0 +1,14 @@
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\bin\Release\obs-websocket-dotnet-tests.dll
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\bin\Release\obs-websocket-dotnet-tests.pdb
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\bin\Release\Newtonsoft.Json.dll
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\bin\Release\obs-websocket-dotnet.dll
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\bin\Release\websocket-sharp.dll
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\bin\Release\obs-websocket-dotnet.pdb
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\bin\Release\obs-websocket-dotnet.xml
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\bin\Release\Newtonsoft.Json.xml
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\bin\Release\websocket-sharp.xml
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\obj\Release\obs-websocket-dotnet-tests.csprojAssemblyReference.cache
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\obj\Release\obs-websocket-dotnet-tests.csproj.CoreCompileInputs.cache
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\obj\Release\obs-websocket-dotnet-tests.csproj.CopyComplete
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\obj\Release\obs-websocket-dotnet-tests.dll
+E:\Jitsi\src\reference\obs-websocket-dotnet-tests\obj\Release\obs-websocket-dotnet-tests.pdb

@@ -1,0 +1,8 @@
+- 6/16/2020
+1. Need to register domain name like “strong.building.com” in DNS.
+	a. This domain will be used the Url of your video stream server.
+	b. I hope you give me in a short time.
+2. Need to use VPS(virtual private server) that run us Jitsi server.
+	a. This server will be test server and used to provide video stream.
+	b. Through to use this server, I will confirm special in detail that 200*100 people can use this server.
+3. Thanks & Regards!

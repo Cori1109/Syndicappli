@@ -1,0 +1,35 @@
+body {
+    font-family: 'Poppins' !important;
+    font-size: 16px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    text-align: left;
+    border-bottom: 2px solid black;
+  }
+  
+  thead button {
+    cursor: pointer;
+    border: 0;
+    border-radius: none;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: inherit;
+    margin-bottom: 1px;
+  }
+
+  
+  tbody td {
+    padding: 0.5em;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  tbody tr:hover {
+    background-color: #eee;
+  }
+  

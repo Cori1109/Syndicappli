@@ -1,0 +1,1 @@
+INSERT INTO dv2_challenge_type(challenge_type_id, type_name) VALUES(3, 'Take home challenge');

@@ -1,0 +1,10 @@
+E:\Project\Camera\obs-websocket-dotnet-master\obs-websocket-dotnet\bin\Debug\obs-websocket-dotnet.xml
+E:\Project\Camera\obs-websocket-dotnet-master\obs-websocket-dotnet\bin\Debug\obs-websocket-dotnet.dll
+E:\Project\Camera\obs-websocket-dotnet-master\obs-websocket-dotnet\bin\Debug\obs-websocket-dotnet.pdb
+E:\Project\Camera\obs-websocket-dotnet-master\obs-websocket-dotnet\bin\Debug\Newtonsoft.Json.dll
+E:\Project\Camera\obs-websocket-dotnet-master\obs-websocket-dotnet\bin\Debug\websocket-sharp.dll
+E:\Project\Camera\obs-websocket-dotnet-master\obs-websocket-dotnet\bin\Debug\Newtonsoft.Json.xml
+E:\Project\Camera\obs-websocket-dotnet-master\obs-websocket-dotnet\bin\Debug\websocket-sharp.xml
+E:\Project\Camera\obs-websocket-dotnet-master\obs-websocket-dotnet\obj\Debug\obs-websocket-dotnet.csprojResolveAssemblyReference.cache
+E:\Project\Camera\obs-websocket-dotnet-master\obs-websocket-dotnet\obj\Debug\obs-websocket-dotnet.dll
+E:\Project\Camera\obs-websocket-dotnet-master\obs-websocket-dotnet\obj\Debug\obs-websocket-dotnet.pdb

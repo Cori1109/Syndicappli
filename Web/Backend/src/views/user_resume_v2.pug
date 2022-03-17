@@ -1,0 +1,424 @@
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    style(type='text/css' rel='stylesheet' media='all').
+      /* Typography */
+      .logo{
+        font-family: "GorditaBold", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 2.36;
+        color: #1E1E1E;
+        text-decoration: none;
+      }
+      .logo-sub{
+        font-family: "GorditaRegular", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #D7D7D7;
+        text-decoration: none;
+      }
+      .title-1{ }
+      .txt-l{ text-align: left; }
+      .txt-c{ text-align: center; }
+      .txt-j{ text-align: justify; }
+      .txt-r{ text-align: right; }
+      /* General */
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        /*background-color: #FAFAFA;*/
+        font-family: "GorditaRegular", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #212121;
+      }
+      * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+      }
+      /* Grid */
+      .grid{
+        /*display: flex;*/
+      }
+      .grid .col{ float: left; }
+      .grid .col.w-1-3{ width: 33.33%; }
+      .grid .col.w-2-3{ width: 66.66%; }
+      .grid .col .col-inner{ padding: 0 10px; }
+      .grid .col:nth-child(1) .col-inner{
+        padding-left: 0;
+      }
+      .grid .col:last-child .col-inner{
+        padding-right: 0;
+      }
+      /* Box */
+      .box{
+        border: 1px solid #D7D7D7;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #D7D7D7;
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .box-title{
+        font-family: "GorditaMedium", sans-serif;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: left;
+        color: #212121;
+      }
+      .box-body{
+        margin: 40px 0 10px 0;
+      }
+      .box-row{
+        position: relative;
+        /*display: flex;*/
+        margin-bottom: 30px;
+      }
+      .date-holder {
+        height: auto;
+        min-height: 100%;
+        min-width: 63px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .date-start{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .date-year {
+        font-family: "GorditaMedium", sans-serif;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: left;
+        color: #888;
+      }
+      .date-month {
+        font-family: "GorditaMedium", sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: left;
+        color: #888888;
+      }
+      .date-separator {
+        /*margin: 20px auto;*/
+        width: 1px;
+        /*height: calc(100% - 120px);*/
+        /*min-height: 10px;*/
+        background-color: #e6e6e6;
+        position: absolute;
+        top: 60px;
+        bottom: 60px;
+        left: 40%;
+      }
+      .date-end{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .content-holder {
+        display: inline-block;
+        /*margin-left: 20px;*/
+        padding-left: 80px;
+      }
+      .title-holder{}
+      .title-holder .title {
+        font-family: "GorditaMedium", sans-serif;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: left;
+        color: #212121;
+        margin-bottom: 2px;
+      }
+      .title-holder .subtitle {
+        font-family: "GorditaRegular", sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: left;
+        color: #888;
+        margin-bottom: 2px;
+      }
+      .details-holder {
+        font-family: "GorditaRegular", sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: left;
+        color: #212121;
+        margin-bottom: 5px;
+      }
+      .details-holder ul {
+        padding: 20px 0 0 20px;
+        margin: 0;
+      }
+      .details-holder ul li {
+        font-family: "GorditaRegular", sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: left;
+        color: #212121;
+        margin-bottom: 5px;
+      }
+      /* Page styles */
+      .page {}
+      .page-inner {}
+      .page-head{
+        margin-bottom: 40px;
+      }
+      .page-body{}
+      /* Personal info Box */
+      .personal-info{ text-align: center; }
+      .personal-info .icon { margin-right: 7px; }
+      .profile-img-holder {
+        margin-bottom: 32px;
+      }
+      .profile-img{
+        width: 96px;
+        height: 96px;
+        margin: 0 auto;
+        border-radius: 100%;
+      }
+      .user-fullname {
+        font-family: "GorditaMedium", sans-serif;
+        text-align: center;
+        font-size: 16px;
+        line-height: 21px;
+        color: #444;
+        margin-bottom: 16px;
+      }
+      .user-title {
+        font-family: "GorditaMedium", sans-serif;
+        text-align: center;
+        font-size: 14px;
+        line-height: 19px;
+        color: #666;
+        margin-bottom: 8px;
+      }
+      .user-subtitle {
+        font-family: GorditaRegular,sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #888;
+        margin-bottom: 8px;
+      }
+      .user-address {
+        margin-top: 24px;
+        /*display: flex;
+        align-items: center;
+        justify-content: center;*/
+        font-size: 13px;
+        color: #666;
+      }
+      .user-worktime {
+        margin-top: 8px;
+        /*display: flex;
+        align-items: center;
+        justify-content: center;*/
+        font-size: 13px;
+        color: #666;
+      }
+      .user-worktime > *, .user-address > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      /* Skills box */
+      table.skills-table {
+        width: 100%;
+        border: none;
+      }
+      table.skills-table thead tr th, .skill-type {
+        font-family: "GorditaMedium", sans-serif !important;
+        font-size: 12px !important;
+        color: rgba(0,0,0,.5) !important;
+        text-align: left !important;
+        padding-bottom: 10px !important;
+      }
+      table.skills-table thead tr th:nth-child(2) { text-align: right; }
+      table.skills-table tbody tr td {
+        font-family: "GorditaRegular", sans-serif;
+        font-size: 14px;
+        color: #212121;
+        text-align: left;
+        padding-bottom: 5px;
+      }
+      table.skills-table tbody tr td:nth-child(2) { text-align: right; }
+  body
+    div(class="wrap")
+      div(class="page")
+        div(class="page-inner")
+          div(class="page-head")
+            div(class="txt-r")
+              div(class="logo") Turing
+              div(class="logo-sub") Developer Resume
+          div(class="page-body")
+            div(class="grid")
+              div(class="col w-1-3")
+                div(class="col-inner")
+                  div(class="box personal-info")
+                    div(class="box-title") Personal info
+                    div(class="box-body")
+                      div(class="profile-img-holder")
+                        img(class="profile-img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Sample profile img" width="" height="")
+                      div(class="user-fullname") #{userInfo.full_name}
+                      div(class="user-title") #{userInfo.role} Engineer with #{userInfo.years_of_experience} years of experience
+                      div(class="user-subtitle") #{userInfo.years_of_working_remotely} years of remote work experience
+                      div(class="user-address")
+                        img(class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAADpElEQVR4Ae3aA9DsSBQF4DNa2+ZvZNL3lNa2d0tr24W1bdu2bdu2beO5l8/InX/6JpmqfKdcgz4dA4VCoVAohNQ7mSwrB8k5cjOf4gcyiL/zA3lcbpZzeIAsyxpyrMLV5Ab+Tj+J/C7XcTVUkDcLTCG7yWf0ushnsnvb5MiNqtuZX9I3mC+5A6rIHtfme/QDzHtuTWSqIifSNxc5IbMtgtPLffTNR+7j9EhffW6+TR8ob0XzIF2cTz6nDxf5nPMhPV0z8336wHm/a2akgzU+TW+Qp1M6TvMieqNcBHvcgN4wG8BW2+TyuWUB+dz4FEP2obeN7Gt76PrNvMBvhoc1OZbePnKM2e5TfqVPIb8Y7U5lHf0gZJBc5TaJ43iGvxO7TeQqGUT9t9eBBblKPYR73PwYh5ufd6sLXA0DJf6kHMCRmLCSHE6vyk8oIbR4MeXsHY5JcEfQaxIvhtDcnrqVJ2HuSryHXpG9EJqcr9l0k8/r++ZVbc7nITR5RFHgMijIZYpfegSh8YNQp2Ka00H5EKHxe/qkRJ1QiDoVU/E9QpMR9EnpnBYKndMqlsBwhMY/6JPSNh0U2qajT8wfCI2f0CfF9UDB9SgKfILQ+EKaGzFfQGiqA9AVUOAVqgNiaHK66kC2IBJEC2oOZHI6QpPNdLcJk04ldLcjZTOEVu9Vn4tOAo+i16Tei+DK/KPJ89GSHEavyh8oIzy5o5kLmv6FeI/2+3InLHCrRi8pXT2egdO7uttEruIQenW2MrqlKyPo7SMjemeCDT5An0IegBW3XSoFtoeVaGoZZD18GcSpYEcuNC9wISzFi1oXiBeFLb5tOv/vwppsZlpgM5irykdmBT5GFfbcFlYF3BYwYr8M7OfffjuQzZGaMt8MXuAtlJEet17oAm49pEteClrgFaTNLR/0+LsC0sdrgxW4FlnonSPMU0v5tW92ZIPb257/2yvJ403P/xMoITtRJ4c1VWBY1IlsydFNzf/RyNo8U/KTARf4dJ4pkb14rQHv/ddCPvCKARW4AnnRNh2/aHj4X7RNh/yIl260gFsK+dLYW9RyEvKGNXlOXeB51pA/9bn5nWr437u5kE/x0jI8+RG2WxL5JQcmFjgQuVbmU5Ms8DTKyLe+eeWHic7+j9E8yD+uOOEtQYZzRbQG2W2CBXaDHfsX1OR8tJSKPDnW8J9EBa0lmk2+HjX8r6PZ0Hoo/z8bHkJBa5Kt6ella7QuHsWjYKZQKBQKhb8AaFXSW3c/idsAAAAASUVORK5CYII=" alt="" width="16" height="16")
+                        span(class="txt") Croatia
+                      div(class="user-worktime")
+                        img(class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAAFnUlEQVR4Ae2bU4DkShSGz3q0todXPZ1Nnf/atm3btn3f1rZt27Zt297ta52umSTdlck+9FfPhT8pnvqLEpgjQYIECRLYOeo+vMcNeACmYRm24iSOYCuWYir3R331Lt+DLDoTObskP86tsQER58Rr0FI9bKXSmUIdxc1wGBGPaT+aIEzBEirOj2EqIrEnnqQepqIUBOeU5695GyLxJ96EL+wyVKAUUs9hFyLmEm/np6mgsHIxzVDDRXfic8l/+F4+iohP6TDfTr5SGD85fsdjmMjN+R11Sx2VWzM9qUayVcO27Vv5HW6GiXzMMf/3VIj8ASk8IN+ql/PXuCa7BOVDepJ9tfqGl+crok96EplHVcScPJu+W/1o5XocRz/z7jzLmxEqR2ZBFq/Nc119pUZybH8Ur+RVKlba6WSO3JrYrG38aW4oG+8NK5Ub8GmthPWqmrHOw2u0zV+rrjJS/lX68rHsnPIUP+lJmK9tfq9QGhkilMbdtBJmh4pTvKCxpuCT/AwZhp/GSU1N9Sk+cJum0EPqevIBdT0OaWq7kWLHqqSZ6g4zyCcYfDR6lxTHSOCOiMik7iQf4Yc0/6AtxYZ9taaw78hn8F10rfal5J3sElgtC+LB7vcp/81HXijEg2W9WIpi5BV+LXpelhOnMQFiUsUyWbd6mTxSFJvlqotziPwRIFHnydWZ13g8eKpnERGpCZF/AiTcFLL+p8gLcsPLe+wyBSkgXJb3yA5M7lFXQur/kshfARJ8KdugrnSfuZ34/gdCaQUtwC7DB4SEdu63uHI9/JnIfwES/CxaccRlNE/dJ39eODMIAZwt26HuIzegvtzUEgUhgAizRVduQG7geSLbB4EJeF98ygXkTKgcIiKFAxMQlm1xcdhX18kVgCgoAURyO6+uIyfwqlDdI0gB6C5a86pzlnriD3wd6B/4Wgio55xlqMjyaJAC8Kj4nEPJCRmDsC8IUoA6X3zO+eSEjJVZGUEKsDJkLMrzuEeFIAWggozCkhPyKJGeFKSA9CQh4BQ5ISP4oeJBCggVl7cP5AR2mu9CGGinm+lC2ElO8BrzgxgRPopv05MMDOI1BTuNihkEd5NH7Au8T6NDRbWPUUzw7bqgOQ/15pXgx0T+Id5PA99SjGSXUJ/jSPQlIP/gvjPhW+9biddFhT0pDlRt7q29fbmfXIEeojWvOWe5Md7ttISvxUpNZxplnU2OyOCKfYMLDwRkVVb8phB8rIn9H+dfkEL5wJbM4yo6ggUi2/tkAKuG7hqJN/JD7o+UPI/cwI3krS0ZQl2JpRoR4/LqTDwzpgsnfkgfVjEBiuE9PgAp4oRurgtnxhhWsVJxRB/YMgOqRt/88A/OgS0+6tqmxu1laNG0Icm+lBf9p4bV2SWcQ4vchtyCaxDRn4wNUgRvYt9fXeMqF6fhCF/h5Zpnhci+N1yWjGNV4jZ8Gi10oV3sleF18xccRlCXoDRFgSayfq+WtKK8SV4x2TYVEGzJcyE2e/Y2qjcQEWmBwzpozjmxSNbNr8UyY6/SX7P6TCEeGn3NGpO3FNcEctH9rcYdcAnFBnfQSHiAfETdp6mxXRxRGd4ui+OjdS4kn7Av0Fg6d3gPK8jTgUz7fbPb7Nd0n+v9MTw9fQYbnmRsjOdqLWcdzU2q2aW4va4OzEpPMrLgY3Uepr8rzZwSeK1505+wXfImve0S9eO1XaK+s+3SX+PrWrwagPHVvPUY4eCtx87m7yFO5m/76vjN39w/Pck3+z3/gohDOo6J3Oxv+z1SaiTn1vzXfo/j+efm0/jO5/0WHsAR/x9A+ArC/j9B8ZtC/ALv8f8RkO/PsLDDSPM348twWQqCUHH1RJzdaSIepaIULGC0CPwpooHt2GPuH4NyK+fHoIE9x+V7//8cl4/+8Rx3mh/PcRMkSJAgQYJfAf033UhihKTyAAAAAElFTkSuQmCC" alt="" width="16" height="16")
+                        span(class="txt") 08:00 AM - 04:00 PM PDT
+                  div(class="box skills")
+                    div(class="box-title") Skills
+                    div(class="box-body")
+                      table(class="skills-table")
+                        tbody
+                          tr
+                            td(colspan="2" class="skill-type") Frontend
+                          each skill in userSkills['Front End']
+                            tr
+                              td= skill.skill_name
+                              td= skill.score
+                                span &nbsp; yrs
+                          tr
+                            td(colspan="2")
+                          tr
+                            td(colspan="2" class="skill-type") Backend
+                          each skill in userSkills['Back End']
+                            tr
+                              td= skill.skill_name
+                              td= skill.score
+                                span &nbsp; yrs
+                          tr
+                            td(colspan="2")
+                          tr
+                            td(colspan="2" class="skill-type") Database
+                          each skill in userSkills['Front End']
+                            tr
+                              td= skill.skill_name
+                              td= skill.score
+                                span &nbsp; yrs
+                          tr
+                            td(colspan="2")
+                          tr
+                            td(colspan="2" class="skill-type") Cloud-Technologies
+                          each skill in userSkills['Front End']
+                            tr
+                              td= skill.skill_name
+                              td= skill.score
+                                span &nbsp; yrs
+                          tr
+                            td(colspan="2")
+                          tr
+                            td(colspan="2" class="skill-type") Container-Technologies
+                          each skill in userSkills['Front End']
+                            tr
+                              td= skill.skill_name
+                              td= skill.score
+                                span &nbsp; yrs
+                          tr
+                            td(colspan="2")
+                          tr
+                            td(colspan="2" class="skill-type") Version Control
+                          each skill in userSkills['Front End']
+                            tr
+                              td= skill.skill_name
+                              td= skill.score
+                                span &nbsp; yrs
+                          tr
+                            td(colspan="2")
+                          tr
+                            td(colspan="2" class="skill-type") Concepts
+                          each skill in userSkills['Front End']
+                            tr
+                              td= skill.skill_name
+                              td= skill.score
+                                span &nbsp; yrs
+                          tr
+                            td(colspan="2")
+                          tr
+                            td(colspan="2" class="skill-type") Project Management
+                          each skill in userSkills['Front End']
+                            tr
+                              td= skill.skill_name
+                              td= skill.score
+                                span &nbsp; yrs
+              div(class="col w-2-3")
+                div(class="col-inner")
+                  div(class="box")
+                    div(class="box-title") Experience
+                    div(class="box-body")
+                      each experience in userExperience
+                        div(class="box-row")
+                          div(class="date-holder")
+                            div(class="date-start")
+                              div(class="date-month") #{experience.end_month}
+                              div(class="date-year") #{experience.end_year}
+                            div(class="date-separator")
+                            div(class="date-end")
+                              div(class="date-month") #{experience.start_month}
+                              div(class="date-year") #{experience.start_year}
+                          div(class="content-holder")
+                            div(class="title-holder")
+                              div(class="title") #{experience.position}
+                              div(class="subtitle") #{experience.company}
+                            div(class="details-holder")
+                              ul
+                                each detail in experience.details
+                                  li
+                                    | #{detail}
+                              div(style='clear: both;')
+                  div(class="box")
+                    div(class="box-title") Projects
+                    div(class="box-body")
+                      each project in userProjects
+                        div(class="box-row")
+                          div(class="date-holder")
+                            div(class="date-start")
+                              div(class="date-month") #{project.end_month}
+                              div(class="date-year") #{project.end_year}
+                            div(class="date-separator")
+                            div(class="date-end")
+                              div(class="date-month") #{project.start_month}
+                              div(class="date-year") #{project.start_year}
+                          div(class="content-holder")
+                            div(class="title-holder")
+                              div(class="title") #{project.project_name}
+                            div(class="details-holder")
+                              ul
+                                each detail in project.details
+                                  li
+                                    | #{detail}
+                          div(style='clear: both;')
+                  div(class="box")
+                    div(class="box-title") Education
+                    div(class="box-body")
+                      each education in userEducation
+                        div(class="box-row")
+                          div(class="date-holder")
+                            div(class="date-start")
+                              div(class="date-month") #{education.end_month}
+                              div(class="date-year") #{education.end_year}
+                          div(class="content-holder")
+                            div(class="title-holder")
+                              div(class="title") #{education.degree}
+                              div(class="subtitle") #{education.college}
+                          div(style='clear: both;')
+                  div(class="box")
+                    div(class="box-title") Certification & Awards
+                    div(class="box-body")
+                      each certification in userCertifications
+                        div(class="box-row")
+                          div(class="date-holder")
+                            div(class="date-start")
+                              div(class="date-year") #{certification.year}
+                          div(class="content-holder")
+                            div(class="title-holder")
+                              div(class="title") #{certification.name}
+                          div(style='clear: both;')

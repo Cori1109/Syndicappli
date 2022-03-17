@@ -1,0 +1,1 @@
+ALTER TABLE developer_system_design ADD COLUMN score decimal(10, 1) DEFAULT 0;

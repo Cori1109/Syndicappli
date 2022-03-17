@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <title>Turing - %TITLE%</title>
+  <style>
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+      background: #fff;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 16px;
+      background: #fcfcfc;
+      background-color: #fcfcfc;
+    }
+
+    .root {
+      width: 100%;
+      height: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background: #fcfcfc;
+      background-color: #fcfcfc;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 16px;
+    }
+
+    .content-holder {
+      width: 80%;
+      min-width: 300px;
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 50px 90px 70px 50px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.04);
+      border-radius: 3px;
+      background: #fff;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+
+    .footer-holder {
+      width: 80%;
+      min-width: 300px;
+      max-width: 700px;
+      margin: 0 auto;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 14px;
+    }
+
+    .footer-holder a {
+      color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .header {
+      margin-bottom: 100px;
+    }
+
+    .logo {
+      font-family: 'Arial Black', Gadget, sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .title-div {
+      text-align: center;
+      margin-bottom: 200px;
+    }
+
+    .title-div .title {
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 36px;
+      font-weight: normal;
+      color: #000;
+      margin-bottom: 30px;
+    }
+
+    .title-div .subtitle {
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 18px;
+      font-weight: normal;
+      color: #151515;
+    }
+
+    .date-div {}
+
+    .date-title {
+      color: #151515;
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 18px;
+    }
+
+    .date-val {
+      color: #151515;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 60px;
+    }
+
+    .total-missed-div {}
+
+    .total-missed-title {
+      color: #eb5629;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .total-missed-val {
+      color: #eb5629;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 150px;
+    }
+
+    .what-is-this-div {}
+
+    .what-is-this-title {
+      color: #151515;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .what-is-this-txt {
+      color: #151515;
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 200px;
+    }
+
+    .footer-div {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .footer-title {
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: #202020;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .footer-txt {
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      color: #7e7e7e;
+      line-height: 25px;
+      text-align: left;
+    }
+
+    .txt-c {
+      text-align: center;
+    }
+
+    .margin-100-0 {
+      margin: 100px 0;
+    }
+
+    .margin-50-0 {
+      margin: 50px 0;
+    }
+
+    .margin-b-100 {
+      margin-bottom: 100px;
+    }
+
+    .margin-b-50 {
+      margin-bottom: 50px;
+    }
+
+    /* Standup Submitted CSS */
+    .completed-div {}
+
+    .completed-title {
+      color: #1a73e8;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .completed-val {
+      color: #1a73e8;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 150px;
+    }
+
+    .worked-on {
+      color: #999999;
+      font-size: 26px;
+      font-weight: normal;
+      margin-bottom: 50px;
+    }
+
+    .yesterday-div {}
+
+    .yesterday-title {
+      color: #151515;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .yesterday-val {
+      color: #151515;
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 60px;
+      white-space: pre-wrap;
+    }
+
+    .today-title {
+      color: #151515;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .today-val {
+      color: #151515;
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 50px;
+      white-space: pre-wrap;
+    }
+
+    .today-div .today-div {
+      padding-left: 30px;
+      border-left: 2px solid #151515;
+    }
+
+    .standup-unblocker {
+      color: #151515;
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 50px;
+      white-space: pre-wrap;
+      margin-bottom: 0 !important;
+    }
+
+    /* Standup Submitted CSS */
+    @media screen and (max-width: 600px) {
+      .root {
+        width: 100%;
+        height: 100%;
+        padding: 0 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .content-holder {
+        display: block;
+        width: 90%;
+        min-width: none;
+        max-width: none;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 20px 0;
+      }
+
+      .content-holder>div {
+        padding: 0 20px;
+      }
+
+      .footer-holder {
+        width: 90%;
+        min-width: none;
+        max-width: none;
+        margin: 0 auto;
+      }
+    }
+
+    h3,
+    h4 {
+      font-family: GorditaMedium, sans-serif;
+      color: rgba(0, 0, 0, 0.9);
+      font-weight: 600;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1em;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    a.sign {
+      background-color: #333333;
+      border-radius: 5px;
+      color: #fff;
+      padding: 10px 15px;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1.1px;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+    .email_data a {
+      text-decoration: none !important;
+      color: rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="root">
+    <div class="content-holder">
+      <div class="header">
+        <div class="logo">Turing</div>
+      </div>
+      <div>
+        Hello -name-, 
+        <p>
+          Your project has been deployed successfully. Please visit it at -link-
+        </p>
+      </div>
+    </div>
+    <div class="footer-holder" style="overflow: hidden; margin-bottom:10px">
+      <div style="width:50%; float: left;">
+        <div style="margin-bottom: 5px">
+          <strong>Turing</strong> &copy;2019
+        </div>
+        <div>
+          1900 Embarcadero Road,<br />
+          Palo Alto CA 94303
+        </div>
+      </div>
+      <div style="width:50%; float: right; text-align: right; line-height: 20px">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

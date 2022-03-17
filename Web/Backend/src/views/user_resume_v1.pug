@@ -1,0 +1,180 @@
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    style(type='text/css' rel='stylesheet' media='all').
+      tr {
+        margin: 0;
+        padding: 0;
+      }
+      td {
+        margin: 0;
+        padding: 0;
+      }
+      ul{
+        margin-left: -19px;
+      }
+  body
+    center
+      h4(style='padding:0; margin:0;')
+        | #{userInfo.full_name}
+      h5(style='padding:0; margin:0;')
+        | #{userInfo.role} Engineer with #{userInfo.years_of_experience} years of experience
+      h5(style='padding:0; margin:0; border-bottom: 3px solid black;')
+        | #{userInfo.years_of_working_remotely} years of remote work experience
+    center
+      h4(style='padding:0; margin: 30px 0 20px 0; letter-spacing: 2px;')
+        b
+          | TECHNICAL SKILLS
+    table(style='width: 100%;')
+      if userSkills['Front End']
+        tr
+          td(style='width: 28%;')
+            b
+              | Frontend Languages
+          td
+            each skill in userSkills['Front End']
+              span= skill.skill_name + ' [' + skill.score + ' yrs' + '], '
+      if userSkills['Back End']
+        tr
+          td
+            b
+              | Backend Languages
+          td
+            each skill in userSkills['Back End']
+              span= skill.skill_name + ' [' + skill.score + ' yrs' + '], '
+      if userSkills['Front End']
+        tr
+          td
+            b
+              | Database
+          td
+            each skill in userSkills['Front End']
+              span= skill.skill_name + ' [' + skill.score + ' yrs' + '], '
+      if userSkills['Front End']
+        tr
+          td
+            b
+              | Software
+          td
+            each skill in userSkills['Front End']
+              span= skill.skill_name + ' [' + skill.score + ' yrs' + '], '
+      if userSkills['Front End']
+        tr
+          td
+            b
+              | Cloud Technologies
+          td
+            each skill in userSkills['Front End']
+              span= skill.skill_name + ' [' + skill.score + ' yrs' + '], '
+      if userSkills['Front End']
+        tr
+          td
+            b
+              | Container Technologies
+          td
+            each skill in userSkills['Front End']
+              span= skill.skill_name + ' [' + skill.score + ' yrs' + '], '
+      if userSkills['Front End']
+        tr
+          td
+            b
+              | Version Control
+          td
+            each skill in userSkills['Front End']
+              span= skill.skill_name + ' [' + skill.score + ' yrs' + '], '
+      if userSkills['Front End']
+        tr
+          td
+            b
+              | Concepts
+          td
+            each skill in userSkills['Front End']
+              span= skill.skill_name + ' [' + skill.score + ' yrs' + '], '
+      if userSkills['Front End']
+        tr
+          td
+            b
+              | Project Management
+          td
+            each skill in userSkills['Front End']
+              span= skill.skill_name + ' [' + skill.score + ' yrs' + '], '
+    br
+    center
+      h4(style='padding:0; margin: 30px 0 20px 0; letter-spacing: 2px;')
+        b
+          | PROFESSIONAL EXPERIENCE
+    each experience in userExperience
+      div(style='margin-bottom: 10px;')
+        div(style='float: left;')
+          b
+            | #{experience.position}
+          div
+            i
+              | #{experience.company}
+        div(style='float: right;')
+          if experience.end_year !== 0
+            | #{experience.start_month + ', ' + experience.start_year + ' - ' + experience.end_month + ', ' + experience.end_year}
+          else
+            | #{experience.start_month + ', ' + experience.start_year + ' - present' }
+      div(style='clear: both;')
+      p(style='white-space: pre;')
+        ul
+          each detail in experience.details
+            li
+              | #{detail}
+
+    center
+      h4(style='padding:0; margin: 30px 0 20px 0; letter-spacing: 2px;')
+        b
+          | RELEVANT PROJECTS
+    each project in userProjects
+      div(style='margin-bottom: 10px;')
+        div(style='float: left;')
+          b
+            | #{project.project_name}
+        div(style='float: right;')
+          if project.end_year !== 0
+            | #{project.start_month + ', ' + project.start_year + ' - ' + project.end_month + ', ' + project.end_year}
+          else
+            | #{project.start_month + ', ' + project.start_year + ' - present'}
+      div(style='clear: both;')
+      p(style='white-space: pre;')
+        ul
+          each detail in project.details
+            li
+              | #{detail}
+
+    center
+      h4(style='padding:0; margin: 30px 0 20px 0; letter-spacing: 2px;')
+        b
+          | EDUCATION
+    each education in userEducation
+      div(style='margin-bottom: 10px;')
+        div(style='float: left;')
+          b
+            | #{education.degree}
+          div
+            i
+              | #{education.college}
+        div(style='float: right;')
+          | #{education.end_month + ', ' + education.end_year}
+        div(style='clear: both;')
+
+    center
+      h4(style='padding:0; margin: 30px 0 20px 0; letter-spacing: 2px;')
+        b
+          | CERTIFICATIONS & AWARDS
+    each certification in userCertifications
+      div(style='margin-bottom: 10px; clear: both;')
+        div(style='float: left;')
+          | &#8226; #{certification.name}
+        div(style='float: right;')
+          | #{certification.year}
+
+    center(style='margin-top:30px;')
+      h4(style='padding:0; margin: 30px 0 20px 0; letter-spacing: 2px; clear: both;')
+      p(style='white-space: pre;')
+        b
+          | WORKING HOURS
+    div
+      | &#8226; I am available from #{userInfo.time_from} - #{userInfo.time_to} PST

@@ -1,0 +1,25 @@
+# Setting our base image
+FROM mysql:5.7
+
+# Load in config to allow external connections
+ADD docker/mysql/my.cnf /etc/mysql/conf.d/my.cnf
+
+# Create the mysql data folder
+RUN chown -R mysql:root /var/lib/mysql/
+
+# Providing the ability to set the DB credentials
+ARG MYSQL_DATABASE=default_database
+ARG MYSQL_USER-default_user
+ARG MYSQL_PASSWORD=secret
+
+# Loading our database credentials
+ENV MYSQL_DATABASE=$MYSQL_DATABASE
+ENV MYSQL_USER=$MYSQL_USER
+ENV MYSQL_PASSWORD=$MYSQL_PASSWORD
+ENV MYSQL_ALLOW_EMPTY_PASSWORD=true
+
+# Copy our existing sql data into our new DB
+COPY public/db /docker-entrypoint-initdb.d
+
+# Run the database server
+CMD ["mysqld"]
